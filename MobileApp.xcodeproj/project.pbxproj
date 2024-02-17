@@ -14,6 +14,7 @@
 		07FA337B2B7EEAD3007962BF /* MobileAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA337A2B7EEAD3007962BF /* MobileAppTests.swift */; };
 		07FA33852B7EEAD3007962BF /* MobileAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA33842B7EEAD3007962BF /* MobileAppUITests.swift */; };
 		07FA33872B7EEAD3007962BF /* MobileAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA33862B7EEAD3007962BF /* MobileAppUITestsLaunchTests.swift */; };
+		A9D298C02B80309100AE5B29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D298BF2B80309100AE5B29 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		07FA33802B7EEAD3007962BF /* MobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FA33842B7EEAD3007962BF /* MobileAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppUITests.swift; sourceTree = "<group>"; };
 		07FA33862B7EEAD3007962BF /* MobileAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9D298BF2B80309100AE5B29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				07FA33842B7EEAD3007962BF /* MobileAppUITests.swift */,
 				07FA33862B7EEAD3007962BF /* MobileAppUITestsLaunchTests.swift */,
+				A9D298BF2B80309100AE5B29 /* ContentView.swift */,
 			);
 			path = MobileAppUITests;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			files = (
 				07FA33872B7EEAD3007962BF /* MobileAppUITestsLaunchTests.swift in Sources */,
 				07FA33852B7EEAD3007962BF /* MobileAppUITests.swift in Sources */,
+				A9D298C02B80309100AE5B29 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
