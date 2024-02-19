@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
  
 struct Home : View {
      
@@ -20,9 +19,9 @@ struct Home : View {
                 }) {
                     Image(systemName: "slider.horizontal.3")
                 }
-                
+                 
                 Spacer()
-                
+                 
                 Button(action: {
                 }) {
                     Image("photo1")
@@ -31,38 +30,46 @@ struct Home : View {
                         .clipShape(Circle())
                 }
             }
-            
+             
             Text("Find More").fontWeight(.heavy).font(.largeTitle).padding(.top,15)
             HStack{
                 HStack {
-                    
+                     
                     Text("Experiences").fontWeight(.heavy)
-                        .onTapGesture {
-                            self.selectedTab = .FirstTab
-                        }
-                    
-                    
+                        .foregroundColor(selectedTab == .FirstTab ? Color.red : Color.black)
+                    .onTapGesture {
+                        self.selectedTab = .FirstTab
+                    }
+                     
                     Spacer()
-                    
+                     
                     Text("Adventures").fontWeight(.heavy)
-                        .onTapGesture {
-                            self.selectedTab = .SecondTab
-                        }
-                    
-                    
+                        .foregroundColor(selectedTab == .SecondTab ? Color.red : Color.black)
+                    .onTapGesture {
+                        self.selectedTab = .SecondTab
+                    }
+                     
                     Spacer()
-                    
+                     
                     Text("Activities").fontWeight(.heavy)
-                        .onTapGesture {
-                            self.selectedTab = .ThirdTab
-                        }
+                        .foregroundColor(selectedTab == .ThirdTab ? Color.red : Color.black)
+                    .onTapGesture {
+                        self.selectedTab = .ThirdTab
+                    }
                 }
-                
-                
+                 
                 Spacer()
             }.padding([.top],30)
-                .padding(.bottom,15)
-        }
+            .padding(.bottom, 15)
+         
+            if selectedTab == .FirstTab {
+                FirstTabView()
+            } else if selectedTab == .SecondTab {
+                SecondTabView()
+            } else {
+                ThirdTabView()
+            }
+        }.padding()
     }
 }
  
@@ -72,9 +79,28 @@ struct Home_Previews: PreviewProvider {
     }
 }
  
+struct FirstTabView : View {
+    var body : some View {
+        ExperiencesTab()
+       
+    }
+}
+ 
+struct SecondTabView : View {
+    var body : some View {
+        AdventuresTab()
+       
+    }
+}
+ 
+struct ThirdTabView : View {
+    var body : some View {
+        Text("hello")
+    }
+}
+ 
 enum Tabs {
     case FirstTab
     case SecondTab
     case ThirdTab
 }
-
