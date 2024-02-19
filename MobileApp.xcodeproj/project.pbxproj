@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0773E81B2B83AC2A00D31534 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773E81A2B83AC2A00D31534 /* Home.swift */; };
 		07FA33692B7EEAC9007962BF /* MobileAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA33682B7EEAC9007962BF /* MobileAppApp.swift */; };
 		07FA336B2B7EEAC9007962BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA336A2B7EEAC9007962BF /* ContentView.swift */; };
 		07FA336D2B7EEAD2007962BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FA336C2B7EEAD2007962BF /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0773E81A2B83AC2A00D31534 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		07FA33652B7EEAC9007962BF /* MobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FA33682B7EEAC9007962BF /* MobileAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAppApp.swift; sourceTree = "<group>"; };
 		07FA336A2B7EEAC9007962BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				07FA336C2B7EEAD2007962BF /* Assets.xcassets */,
 				07FA336E2B7EEAD2007962BF /* MobileApp.entitlements */,
 				07FA336F2B7EEAD2007962BF /* Preview Content */,
+				0773E81A2B83AC2A00D31534 /* Home.swift */,
 			);
 			path = MobileApp;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FA336B2B7EEAC9007962BF /* ContentView.swift in Sources */,
+				0773E81B2B83AC2A00D31534 /* Home.swift in Sources */,
 				07FA33692B7EEAC9007962BF /* MobileAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
