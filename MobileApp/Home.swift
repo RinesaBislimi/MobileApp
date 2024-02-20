@@ -82,20 +82,22 @@ struct Home_Previews: PreviewProvider {
 struct FirstTabView : View {
     var body : some View {
         ExperiencesTab()
-       
+        BottomView().padding(.top,10)
     }
 }
  
 struct SecondTabView : View {
     var body : some View {
         AdventuresTab()
-       
+        BottomView().padding(.top,10)
+
     }
 }
  
 struct ThirdTabView : View {
     var body : some View {
-        Text("hello")
+        ActivitiesTab()
+        BottomView().padding(.top,10)
     }
 }
  

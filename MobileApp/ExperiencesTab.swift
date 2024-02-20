@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct ExperiencesTab: View {
+    
+     @State var show = false
+     @State var idSelected = 1
+     @State var imageSelected = "fishing"
+     @State var nameSelected = "Fishing Time"
+     @State var locationSelected = "Olongapo City"
+     @State var ratingSelected = 5
     var body: some View {
         
         ScrollView(.horizontal, showsIndicators: false){
@@ -28,9 +35,13 @@ struct ExperiencesTab: View {
                 }
             }
         }
+            .sheet(isPresented: $show) {
+               Detail()
+            }
+        }
     }
 }
-}
+ 
 struct ExperiencesTab_Previews: PreviewProvider {
     static var previews: some View {
         ExperiencesTab()
