@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
-
-struct Detail: View {
-    var body: some View {
+ 
+struct Detail : View {
+     
+    var travel : Travelling
+     
+    var body : some View{
+         
         VStack{
             GeometryReader { geometry in
-                Image("details")
+                Image(travel.image)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: geometry.size.width, height: geometry.size.height)
@@ -19,53 +23,63 @@ struct Detail: View {
                     .padding(.bottom, -200)
                     .edgesIgnoringSafeArea(.all)
             }
-            ScrollView(.vertical, showsIndicators: true) {
-                
-                VStack(alignment: .leading){
-                    
-                    VStack(alignment: .leading, spacing: 10){
-                        HStack{
-                            VStack(alignment: .leading){
-                                Text("Fishing time").fontWeight(.heavy).font(.largeTitle)
+            GeometryReader{geo in
+                ScrollView(.vertical, showsIndicators: true) {
+                     
+                    VStack(alignment: .leading){
+                         
+                        VStack(alignment: .leading, spacing: 10){
+                            HStack{
+                                VStack(alignment: .leading){
+                                    Text(travel.name).fontWeight(.heavy).font(.largeTitle)
+                                }
+                                 
+                                Spacer()
+                                Text("$587").foregroundColor(Color.orange).font(.largeTitle)
                             }
-                            
-                            Spacer()
-                            Text("$587").foregroundColor(Color.orange).font(.largeTitle)
-                        }
-                    }.padding()
-                    VStack(alignment: .leading, spacing: 15){
-                        HStack(spacing: 5){
-                            Image(systemName: "mappin.and.ellipse").renderingMode(.original)
-                            Text("Olongapo City").foregroundColor(Color.orange)
-                        }
-                        
-                        HStack(spacing : 8){
-                            ForEach(0..<5){_ in
-                                Image(systemName: "star.fill").font(.body).foregroundColor(.yellow)
+                        }.padding()
+                         
+                        VStack(alignment: .leading, spacing: 15){
+                            HStack(spacing: 5){
+                                Image(systemName: "mappin.and.ellipse").renderingMode(.original)
+                                Text(travel.location).foregroundColor(Color.orange)
                             }
-                        }
-                        Text("People").fontWeight(.heavy)
-                        Text("Number Of People In Your Group").foregroundColor(.gray)
-                        HStack(spacing: 6){
-                            ForEach(0..<5){i in
-                                Button(action: {
-                                     
-                                }) {
-                                    Text("\(i + 1)").foregroundColor(.white).padding(20)
-                                }.background(Color.orange)
-                                .cornerRadius(8)
+                             
+                            HStack(spacing : 8){
+                                ForEach(0..<travel.rating){_ in
+                                    Image(systemName: "star.fill").font(.body).foregroundColor(.yellow)
+                                }
                             }
-                        }
-                    }.padding(.horizontal,15)
-                   
+                             
+                            Text("People").fontWeight(.heavy)
+                            Text("Number Of People In Your Group").foregroundColor(.gray)
+                            HStack(spacing: 6){
+                                ForEach(0..<5){i in
+                                    Button(action: {
+                                         
+                                    }) {
+                                        Text("\(i + 1)").foregroundColor(.white).padding(20)
+                                    }.background(Color.orange)
+                                    .cornerRadius(8)
+                                }
+                            }
+                        }.padding(.horizontal,15)
+                         
+                       detailBottom()
+                    }
                 }
-            }
+                 
+            }.background(Color.white)
+            .clipShape(Rounded())
+            .padding(.top, -75)
         }
     }
 }
-
+ 
 struct Detail_Previews: PreviewProvider {
     static var previews: some View {
-        Detail()
+        let travels =  Travelling(id: 1, name: "test", image: "details", rating: 1, location: "Olongapo")
+        return Detail(travel: travels)
+     
     }
 }
