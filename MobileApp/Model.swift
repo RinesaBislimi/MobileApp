@@ -15,8 +15,9 @@ struct Travelling : Identifiable {
     var location : String
 }
 
+
 var data = [
-    Travelling(id: 0, name: "Fishing Time", image: "fishing", rating: 2, location: "Olongapo City"),
-    Travelling(id: 1, name: "Family Camping", image: "family_camping", rating: 5, location: "Subic Bay"),
-    Travelling(id: 2, name: "Travelling", image: "traveling", rating: 3,location: "Clark")
+    Travelling(id: 0, name: "Rugove", image: "eksperienca1", rating: 2, location: "Peje"),
+    Travelling(id: 1, name: "Pamje nga Kryeqyteti", image: "eksperienca2", rating: 5, location: "Prishtine"),
+    Travelling(id: 2, name: "Pamje Nga Prizreni", image: "eksperienca3", rating: 3,location: "Prizren")
 ]

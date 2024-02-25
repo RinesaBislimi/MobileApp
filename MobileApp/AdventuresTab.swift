@@ -22,10 +22,10 @@ struct AdventuresTab: View {
                                 Image("adventure1")
                                     .resizable().frame(width: 200, height: 300).cornerRadius(20)
                             }
-                            Text("Travel Time").fontWeight(.heavy)
+                            Text("Shpella e Gadimes").fontWeight(.heavy)
                             HStack(spacing: 5){
                                 Image(systemName: "mappin.and.ellipse").renderingMode(.original)
-                                Text("Olongapo City").foregroundColor(.gray)
+                                Text("Gadime e Poshtme").foregroundColor(.gray)
                             }
                         }
                          
@@ -35,10 +35,10 @@ struct AdventuresTab: View {
                                 Image("adventure2")
                                     .resizable().frame(width: 200, height: 300).cornerRadius(20)
                             }
-                            Text("Family Camping").fontWeight(.heavy)
+                            Text("Liqeni i Batllaves").fontWeight(.heavy)
                             HStack(spacing: 5){
                                 Image(systemName: "mappin.and.ellipse").renderingMode(.original)
-                                Text("Subic Bay").foregroundColor(.gray)
+                                Text("Podujeve").foregroundColor(.gray)
                             }
                         }
                  
@@ -49,10 +49,11 @@ struct AdventuresTab: View {
                                 Image("adventure3")
                                     .resizable().frame(width: 200, height: 300).cornerRadius(20)
                             }
-                            Text("Travelling").fontWeight(.heavy)
+                            
+                            Text("Prekazi historik").fontWeight(.heavy)
                             HStack(spacing: 5){
                                 Image(systemName: "mappin.and.ellipse").renderingMode(.original)
-                                Text("Clark").foregroundColor(.gray)
+                                Text("Skenderaj").foregroundColor(.gray)
                             }
                     }
                 }
@@ -66,3 +67,4 @@ struct AdventuresTab_Previews: PreviewProvider {
         AdventuresTab()
     }
 }
+

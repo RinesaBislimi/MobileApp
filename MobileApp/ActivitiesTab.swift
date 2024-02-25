@@ -19,13 +19,13 @@ struct ActivitiesTab: View {
                     Button(action: {
                         self.show.toggle()
                     }) {
-                        Image("travelling1")
+                        Image("aktivitet1")
                             .resizable().frame(width: 200, height: 300).cornerRadius(20)
                     }
-                    Text("Wipe-clean").fontWeight(.heavy)
+                    Text("Germi").fontWeight(.heavy)
                     HStack(spacing: 5){
                         Image(systemName: "mappin.and.ellipse").renderingMode(.original)
-                        Text("Olongapo City").foregroundColor(.gray)
+                        Text("Prishtine").foregroundColor(.gray)
                     }
                 }
                 
@@ -33,13 +33,13 @@ struct ActivitiesTab: View {
                     Button(action: {
                         self.show.toggle()
                     }) {
-                        Image("travelling2")
+                        Image("aktivitet2")
                             .resizable().frame(width: 200, height: 300).cornerRadius(20)
                     }
-                    Text("Family Camping").fontWeight(.heavy)
+                    Text("Muze").fontWeight(.heavy)
                     HStack(spacing: 5){
                         Image(systemName: "mappin.and.ellipse").renderingMode(.original)
-                        Text("Subic Bay").foregroundColor(.gray)
+                        Text("Prishtine").foregroundColor(.gray)
                     }
                 }
                 
@@ -47,13 +47,14 @@ struct ActivitiesTab: View {
                     Button(action: {
                         self.show.toggle()
                     }) {
-                        Image("travelling3")
+                        Image("aktivitet3")
                             .resizable().frame(width: 200, height: 300).cornerRadius(20)
                     }
-                    Text("Travelling").fontWeight(.heavy)
+                    
+                    Text("Ushqime tradicionale").fontWeight(.heavy)
                     HStack(spacing: 5){
                         Image(systemName: "mappin.and.ellipse").renderingMode(.original)
-                        Text("Clark").foregroundColor(.gray)
+                        Text("Drenas").foregroundColor(.gray)
                     }
                 }
             }
