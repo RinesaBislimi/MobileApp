@@ -4,9 +4,7 @@
 
 //  Created by Viola on 20.2.24.
 //
-
 import SwiftUI
- 
 struct Rounded : Shape {
      
     func path(in rect: CGRect) -> Path {
@@ -21,4 +19,3 @@ struct Rounded_Previews: PreviewProvider {
         Rounded()
     }
 }
- 

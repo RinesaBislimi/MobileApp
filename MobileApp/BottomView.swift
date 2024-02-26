@@ -29,7 +29,7 @@ struct BottomView : View {
                      Button(action: {
                      }) {
                          VStack(spacing: 8){
-                             Image("whatyouwant_01")
+                             Image("hiking")
                                  .resizable().frame(width: 50, height: 50).cornerRadius(10)
                              Text("Hiking").foregroundColor(.gray)
                          }
@@ -38,7 +38,7 @@ struct BottomView : View {
                      Button(action: {
                      }) {
                          VStack(spacing: 8){
-                             Image("whatyouwant_02")
+                             Image("ski")
                                  .resizable().frame(width: 50, height: 50).cornerRadius(10)
                              Text("Ski").foregroundColor(.gray)
                          }
@@ -48,7 +48,7 @@ struct BottomView : View {
                               
                      }) {
                          VStack(spacing: 8){
-                             Image("whatyouwant_03")
+                             Image("sky")
                                  .resizable().frame(width: 50, height: 50).cornerRadius(10)
                              Text("Sky Diving").foregroundColor(.gray)
                          }
@@ -57,7 +57,7 @@ struct BottomView : View {
                               
                      }) {
                          VStack(spacing: 8){
-                             Image("whatyouwant_04")
+                             Image("skateboard")
                                  .resizable().frame(width: 50, height: 50).cornerRadius(10)
                              Text("SkateBoard").foregroundColor(.gray)
                          }
