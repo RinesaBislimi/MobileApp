@@ -1,7 +1,7 @@
 //
 //  Rounded.swift
 //  MobileApp
-//
+
 //  Created by Viola on 20.2.24.
 //
 
@@ -21,3 +21,4 @@ struct Rounded_Previews: PreviewProvider {
         Rounded()
     }
 }
+ 
