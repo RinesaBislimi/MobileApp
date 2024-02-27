@@ -16,7 +16,9 @@ struct ContentView: View {
             Text("person").tabItem{
                 Image(systemName:"person.fill").font(.title)
             }
-        }
+            Text("heart").tabItem{
+                Image(systemName:"heart.fill").font(.title)
+            }        }
     }
 }
 

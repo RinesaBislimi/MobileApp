@@ -59,7 +59,7 @@ struct Detail : View {
                                          
                                     }) {
                                         Text("\(i + 1)").foregroundColor(.white).padding(20)
-                                    }.background(Color.orange)
+                                    }.background(Color.blue)
                                     .cornerRadius(8)
                                 }
                             }
