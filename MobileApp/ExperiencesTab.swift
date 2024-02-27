@@ -11,9 +11,9 @@ struct ExperiencesTab: View {
      
     @State var show = false
     @State var idSelected = 1
-    @State var imageSelected = "fishing"
-    @State var nameSelected = "Fishing Time"
-    @State var locationSelected = "Olongapo City"
+    @State var imageSelected = "eksperienca1"
+    @State var nameSelected = "Pamje nga Rugova"
+    @State var locationSelected = "Peje"
     @State var ratingSelected = 5
     var body : some View{
          

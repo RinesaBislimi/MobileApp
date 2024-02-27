@@ -35,14 +35,14 @@ struct Detail : View {
                                 }
                                  
                                 Spacer()
-                                Text("$587").foregroundColor(Color.orange).font(.largeTitle)
+                                Text("").foregroundColor(Color.blue).font(.largeTitle)
                             }
                         }.padding()
                          
                         VStack(alignment: .leading, spacing: 15){
                             HStack(spacing: 5){
                                 Image(systemName: "mappin.and.ellipse").renderingMode(.original)
-                                Text(travel.location).foregroundColor(Color.orange)
+                                Text(travel.location).foregroundColor(Color.blue)
                             }
                              
                             HStack(spacing : 8){

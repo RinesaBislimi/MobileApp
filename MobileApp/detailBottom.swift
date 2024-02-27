@@ -13,7 +13,7 @@ struct detailBottom : View {
         
         VStack(alignment: .leading, spacing: 10){
             Text("Description").fontWeight(.heavy)
-            Text("Towering redwoods, peaceful parkland and the magnificent coast are just some of the landscapes that make the Peninsula and South Bay extraordinary.").foregroundColor(.gray)
+            Text("If you're going from one place to another, you're travelling. People love to go travelling to see new places and experience different cultures.").foregroundColor(.gray)
             
             HStack(spacing: 8){
                 Button(action: {
@@ -30,7 +30,7 @@ struct detailBottom : View {
                         Image(systemName: "arrow.right.circle").renderingMode(.original)
                     }.foregroundColor(.white)
                         .padding()
-                }.background(Color.orange)
+                }.background(Color.blue)
                     .cornerRadius(8)
             }.padding(.top, 6)
             
