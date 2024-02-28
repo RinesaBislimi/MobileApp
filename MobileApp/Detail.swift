@@ -65,7 +65,7 @@ struct Detail : View {
                             }
                         }.padding(.horizontal,15)
                          
-                       detailBottom()
+                        detailBottom(itemName: travel.name)
                     }
                 }
                  

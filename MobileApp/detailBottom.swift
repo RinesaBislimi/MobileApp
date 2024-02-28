@@ -8,9 +8,9 @@
 import SwiftUI
  
 
-
 struct detailBottom : View {
     @EnvironmentObject var itemManager: ItemManager
+    var itemName: String // Added variable to hold the name of the item
 
     var body: some View{
         VStack(alignment: .leading, spacing: 10){
@@ -20,7 +20,7 @@ struct detailBottom : View {
             HStack(spacing: 8){
                 Button(action: {
                     // Call the saveItem method when bookmark button is clicked
-                    itemManager.saveItem(item: "Your item details here")
+                    itemManager.saveItem(item: self.itemName) // Passing the item name here
                 }) {
                     Image(systemName: "bookmark")
                 }
@@ -32,9 +32,9 @@ struct detailBottom : View {
                         Text("Book Your Experience")
                         Image(systemName: "arrow.right.circle").renderingMode(.original)
                     }.foregroundColor(.white)
-                        .padding()
+                    .padding()
                 }.background(Color.blue)
-                    .cornerRadius(8)
+                .cornerRadius(8)
             }.padding(.top, 6)
             
         }.padding()
