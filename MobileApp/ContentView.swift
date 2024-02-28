@@ -1,24 +1,26 @@
-//
-//  ContentView.swift
-//  MobileApp
-//
-//  Created by Rinesa on 15.2.24.
-//
+
+
 
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var itemManager = ItemManager()
+
     var body: some View {
-        TabView{
-            Home().tabItem{
-                Image(systemName:"house").font(.title)
-            }
-            Text("person").tabItem{
-                Image(systemName:"person.fill").font(.title)
-            }
-            Text("heart").tabItem{
-                Image(systemName:"heart.fill").font(.title)
-            }        }
+        TabView {
+            Home()
+                .tabItem {
+                    Image(systemName: "house").font(.title)
+                }
+            Text("person")
+                .tabItem {
+                    Image(systemName: "person.fill").font(.title)
+                }
+            Heart().tabItem {
+                    Image(systemName: "heart.fill").font(.title)
+                }
+        }
+        .environmentObject(itemManager) // Inject ItemManager into the view hierarchy
     }
 }
 

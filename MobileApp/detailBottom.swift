@@ -7,23 +7,26 @@
 
 import SwiftUI
  
+
+
 struct detailBottom : View {
-    
-    var body : some View{
-        
+    @EnvironmentObject var itemManager: ItemManager
+
+    var body: some View{
         VStack(alignment: .leading, spacing: 10){
             Text("Description").fontWeight(.heavy)
             Text("If you're going from one place to another, you're travelling. People love to go travelling to see new places and experience different cultures.").foregroundColor(.gray)
             
             HStack(spacing: 8){
                 Button(action: {
-                    
+                    // Call the saveItem method when bookmark button is clicked
+                    itemManager.saveItem(item: "Your item details here")
                 }) {
                     Image(systemName: "bookmark")
                 }
                 
                 Button(action: {
-                    
+                    // Action for booking experience
                 }) {
                     HStack(spacing: 6){
                         Text("Book Your Experience")
@@ -35,11 +38,5 @@ struct detailBottom : View {
             }.padding(.top, 6)
             
         }.padding()
-    }
-    
-    struct detailBottom_Previews: PreviewProvider {
-        static var previews: some View {
-            detailBottom()
-        }
     }
 }
