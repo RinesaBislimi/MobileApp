@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		070915992B8432C2004C6A57 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070915982B8432C2004C6A57 /* Detail.swift */; };
+		073F63492B8FBDF900EA500D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F63482B8FBDF900EA500D /* LoginView.swift */; };
+		073F634B2B8FC05F00EA500D /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F634A2B8FC05F00EA500D /* SignUpView.swift */; };
+		073F634D2B8FC2D400EA500D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F634C2B8FC2D400EA500D /* User.swift */; };
+		073F634F2B8FC30F00EA500D /* UserDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073F634E2B8FC30F00EA500D /* UserDatabase.swift */; };
 		0773E81B2B83AC2A00D31534 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0773E81A2B83AC2A00D31534 /* Home.swift */; };
 		077888752B8EA7D5008EAC4B /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077888742B8EA7D5008EAC4B /* Heart.swift */; };
 		077888772B8EA84C008EAC4B /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077888762B8EA84C008EAC4B /* ItemManager.swift */; };
@@ -48,6 +52,10 @@
 
 /* Begin PBXFileReference section */
 		070915982B8432C2004C6A57 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		073F63482B8FBDF900EA500D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		073F634A2B8FC05F00EA500D /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		073F634C2B8FC2D400EA500D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		073F634E2B8FC30F00EA500D /* UserDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDatabase.swift; sourceTree = "<group>"; };
 		0773E81A2B83AC2A00D31534 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		077888742B8EA7D5008EAC4B /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		077888762B8EA84C008EAC4B /* ItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
@@ -138,6 +146,10 @@
 				077888742B8EA7D5008EAC4B /* Heart.swift */,
 				077888762B8EA84C008EAC4B /* ItemManager.swift */,
 				077888782B8EAE2C008EAC4B /* ItemView.swift */,
+				073F63482B8FBDF900EA500D /* LoginView.swift */,
+				073F634A2B8FC05F00EA500D /* SignUpView.swift */,
+				073F634C2B8FC2D400EA500D /* User.swift */,
+				073F634E2B8FC30F00EA500D /* UserDatabase.swift */,
 			);
 			path = MobileApp;
 			sourceTree = "<group>";
@@ -301,14 +313,18 @@
 				A9BDD2C22B83DD6A002102D2 /* AdventuresTab.swift in Sources */,
 				A9BDD2C02B83DD1A002102D2 /* Model.swift in Sources */,
 				070915992B8432C2004C6A57 /* Detail.swift in Sources */,
+				073F63492B8FBDF900EA500D /* LoginView.swift in Sources */,
 				A90D5AB22B84BD5F002D5904 /* detailBottom.swift in Sources */,
 				A90D5AB42B84C113002D5904 /* Rounded.swift in Sources */,
 				07FA336B2B7EEAC9007962BF /* ContentView.swift in Sources */,
+				073F634D2B8FC2D400EA500D /* User.swift in Sources */,
 				077888772B8EA84C008EAC4B /* ItemManager.swift in Sources */,
 				077888752B8EA7D5008EAC4B /* Heart.swift in Sources */,
 				079390162B8429CD008A1B04 /* BottomView.swift in Sources */,
+				073F634F2B8FC30F00EA500D /* UserDatabase.swift in Sources */,
 				A9BDD2BE2B83DCAC002102D2 /* ExperiencesTab.swift in Sources */,
 				0773E81B2B83AC2A00D31534 /* Home.swift in Sources */,
+				073F634B2B8FC05F00EA500D /* SignUpView.swift in Sources */,
 				077888792B8EAE2C008EAC4B /* ItemView.swift in Sources */,
 				079390142B842648008A1B04 /* ActivitiesTab.swift in Sources */,
 				07FA33692B7EEAC9007962BF /* MobileAppApp.swift in Sources */,
