@@ -5,11 +5,15 @@
 //  Created by Viola on 20.2.24.
 //
 
+
+
+
+
 import SwiftUI
- 
 
 struct detailBottom : View {
     @EnvironmentObject var itemManager: ItemManager
+    @State private var showAlert = false // State variable to control alert presentation
     var itemName: String // Added variable to hold the name of the item
 
     var body: some View{
@@ -21,6 +25,7 @@ struct detailBottom : View {
                 Button(action: {
                     // Call the saveItem method when bookmark button is clicked
                     itemManager.saveItem(item: self.itemName) // Passing the item name here
+                    showAlert = true // Set showAlert to true when item is saved
                 }) {
                     Image(systemName: "bookmark")
                 }
@@ -37,6 +42,10 @@ struct detailBottom : View {
                 .cornerRadius(8)
             }.padding(.top, 6)
             
-        }.padding()
+        }
+        .padding()
+        .alert(isPresented: $showAlert) { // Present alert based on showAlert state
+            Alert(title: Text("Success"), message: Text("Successfully added to saved items"), dismissButton: .default(Text("OK")))
+        }
     }
 }
