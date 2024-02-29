@@ -9,6 +9,9 @@ struct SignUpView: View {
     @State private var confirmPassword = ""
     @State private var showAlert = false // Added state variable for showing alert
 
+    
+    
+    
     var body: some View {
         NavigationView {
             VStack {
